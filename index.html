@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Twitch TV App</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- Header -->
+    <div class="header">
+      <img src="https://seeklogo.com/images/T/twitch-logo-042FA51F5B-seeklogo.com.png" alt="twitch tv logo">
+      <h1 class="title">Channel Tracker</h1>
+    </div>
+    
+
+    <!-- Main -->
+    <div id="content">
+      <div class="main">
+        <div class="navHead">
+          <div class="nav">
+            <li><a href="#" class="navName" id="followingBtn">Following</a></li>
+            <li><a href="#" class="navName" id="OnlineBtn">Online</a></li>
+            <li><a href="#" class="navName" id="OfflineBtn">Offline</a></li>
+          </div>
+          <div class="search">
+            <input id="searchInput" type="text" placeholder="Search">
+            <button type="button" class="btn btn-primary" id="searchBtn"><i class="fas fa-search"></i></button>
+          </div>
+    </div>
+          <div id="following"></div>
+          <div id="Online"></div>
+          <div id="Offline"></div>
+          <div id="Searched"></div>
+      </div>
+      <div class="videoContainer">
+          <iframe src="https://player.twitch.tv/?channel=relaxbeats" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Coded by <a href="https://github.com/MayDeypalubos">May Deypalubos </a>&copy; 2018.</p>
+    </footer>
+
+  </div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>    
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
+  
+</body>
+</html>
